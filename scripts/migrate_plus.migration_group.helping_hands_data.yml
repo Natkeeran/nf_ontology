@@ -1,0 +1,10 @@
+uuid: 0631da57-1eb3-4a5a-ba42-683409541a72
+langcode: en
+status: true
+dependencies: {  }
+id: helping_hands_data
+label: 'Helping Hands Data'
+description: 'Custom Helping Hands data migration.'
+source_type: 'CSV files'
+module: null
+shared_configuration: null
