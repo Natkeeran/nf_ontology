@@ -4,6 +4,9 @@ status: true
 dependencies:
   module:
     - node
+  enforced:
+    module:
+      - nf_ontology
 id: node.inline
 label: inline
 targetEntityType: node

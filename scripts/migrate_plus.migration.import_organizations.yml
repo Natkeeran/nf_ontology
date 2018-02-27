@@ -12,7 +12,7 @@ migration_group: helping_hands_data
 label: 'Import Organizations'
 source:
   plugin: csv
-  path: /var/www/html/drupal/web/orgs.csv
+  path: /var/www/html/drupal/web/modules/contrib/nf_ontology/orgs.csv
   header_row_count: 1
   keys:
     - Identifier
@@ -43,9 +43,13 @@ Phone	ConatctEmail	Bank Details
     -
       Country: Country
     -
-      BankInfo: BankInfo
+      Phone: Phone
     -
       Email: Email
+    -
+      BankInfo: BankInfo
+    -
+      RegistrationInfo: RegistrationInfo
 
   constants:
     bool_0: 0
@@ -60,14 +64,20 @@ process:
   field_identifier: Identifier
   field_description: Description
   field_founding_date: EstablishedDate
-
-  field_address1: Address1
-  field_village: Village
-  field_district: District
-  field_country: Country
   field_category: Category
   field_subcategory: SubCategory
-  field_bankinfo: BankInfo
+  field_address_1: Address1
+  field_village: Village
+  field_district: District
+  field_province: Province
+  field_country: Country
+  field_phone:
+    plugin: explode
+    delimiter: ';'
+    source: Phone
+  field_email: Email
+  field_bank_info: BankInfo
+  field_registration_info: RegistrationInfo
   uid: constants/uid_root
 destination:
   plugin: 'entity:node'
