@@ -12,13 +12,10 @@ migration_group: helping_hands_data
 label: 'Import Organizations'
 source:
   plugin: csv
-  path: /var/www/html/drupal/web/modules/contrib/nf_ontology/orgs.csv
+  path: /var/www/html/drupal/web/modules/contrib/nf_ontology/scripts/orgs.csv
   header_row_count: 1
   keys:
     - Identifier
-
-Phone	ConatctEmail	Bank Details
-
   column_names:
     -
       Identifier: Identifier
@@ -71,11 +68,11 @@ process:
   field_district: District
   field_province: Province
   field_country: Country
+  field_email: Email
   field_phone:
     plugin: explode
     delimiter: ';'
     source: Phone
-  field_email: Email
   field_bank_info: BankInfo
   field_registration_info: RegistrationInfo
   uid: constants/uid_root
