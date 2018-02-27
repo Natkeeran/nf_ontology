@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+  enforced:
+    module:
+      - nf_ontology
+id: node.field_verification_status
+field_name: field_verification_status
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Verified
+      label: Verified
+    -
+      value: 'Not Verified'
+      label: 'Not Verified'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

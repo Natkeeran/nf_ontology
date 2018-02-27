@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.district
+  module:
+    - facets
+    - system
+  enforced:
+    module:
+      - nf_ontology
+id: district
+theme: carapace
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'facet_block:district'
+settings:
+  id: 'facet_block:district'
+  label: District
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /home
+    negate: false
+    context_mapping: {  }

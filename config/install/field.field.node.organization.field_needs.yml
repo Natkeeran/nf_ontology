@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_needs
+    - node.type.organization
+  enforced:
+    module:
+      - nf_ontology
+id: node.organization.field_needs
+field_name: field_needs
+entity_type: node
+bundle: organization
+label: 'Needs Assessment'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

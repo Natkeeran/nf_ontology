@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.organization
+  module:
+    - node
+  enforced:
+    module:
+      - nf_ontology
+id: node.organization
+targetEntityType: node
+bundle: organization
+types:
+  - 'schema:Organization'
+fieldMappings:
+  title:
+    properties:
+      - 'schema:name'
+  field_description:
+    properties:
+      - 'schema:description'
+  field_district:
+    properties:
+      - 'schema:location'
+  uid:
+    properties:
+      - 'schema:author'
+    mapping_type: rel

@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_verified_by
+    - node.type.organization
+    - node.type.person
+  enforced:
+    module:
+      - nf_ontology
+id: node.organization.field_verified_by
+field_name: field_verified_by
+entity_type: node
+bundle: organization
+label: 'Verified By'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_district
+    - node.type.organization
+  enforced:
+    module:
+      - nf_ontology
+id: node.organization.field_district
+field_name: field_district
+entity_type: node
+bundle: organization
+label: District
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_province
+    - node.type.organization
+  enforced:
+    module:
+      - nf_ontology
+id: node.organization.field_province
+field_name: field_province
+entity_type: node
+bundle: organization
+label: Province
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

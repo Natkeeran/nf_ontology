@@ -1,0 +1,23 @@
+name: nf_ontology
+type: module
+core: 8.x
+dependencies:
+  - block
+  - content_translation
+  - datetime
+  - facets
+  - field
+  - geolocation
+  - geolocation_leaflet
+  - inline_entity_form
+  - language
+  - media_entity
+  - menu_ui
+  - node
+  - options
+  - path
+  - rdf
+  - search_api
+  - system
+  - user
+  - views
