@@ -3,18 +3,21 @@ status: true
 dependencies:
   module:
     - node
+    - options
   enforced:
     module:
       - nf_ontology
 id: node.field_category
 field_name: field_category
 entity_type: node
-type: string
+type: list_string
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
-module: core
+  allowed_values:
+    -
+      value: Homes
+      label: Homes
+  allowed_values_function: ''
+module: options
 locked: false
 cardinality: 1
 translatable: true

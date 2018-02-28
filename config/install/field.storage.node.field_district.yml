@@ -3,18 +3,93 @@ status: true
 dependencies:
   module:
     - node
+    - options
   enforced:
     module:
       - nf_ontology
 id: node.field_district
 field_name: field_district
 entity_type: node
-type: string
+type: list_string
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
-module: core
+  allowed_values:
+    -
+      value: Ampara
+      label: Ampara
+    -
+      value: Anuradhapura
+      label: Anuradhapura
+    -
+      value: Badulla
+      label: Badulla
+    -
+      value: Batticaloa
+      label: Batticaloa
+    -
+      value: Colombo
+      label: Colombo
+    -
+      value: Galle
+      label: Galle
+    -
+      value: Gampaha
+      label: Gampaha
+    -
+      value: Hambantota
+      label: Hambantota
+    -
+      value: Jaffna
+      label: Jaffna
+    -
+      value: Kalutara
+      label: Kalutara
+    -
+      value: Kandy
+      label: Kandy
+    -
+      value: Kegalle
+      label: Kegalle
+    -
+      value: Kilinochchi
+      label: Kilinochchi
+    -
+      value: Kurunegala
+      label: Kurunegala
+    -
+      value: Mannar
+      label: Mannar
+    -
+      value: Matale
+      label: Matale
+    -
+      value: Matara
+      label: Matara
+    -
+      value: Monaragala
+      label: Monaragala
+    -
+      value: Mullaitivu
+      label: Mullaitivu
+    -
+      value: 'Nuwara Eliya'
+      label: 'Nuwara Eliya'
+    -
+      value: Polonnaruwa
+      label: Polonnaruwa
+    -
+      value: Puttalam
+      label: Puttalam
+    -
+      value: Ratnapura
+      label: Ratnapura
+    -
+      value: Trincomalee
+      label: Trincomalee
+    -
+      value: Vavuniya
+      label: Vavuniya
+  allowed_values_function: ''
+module: options
 locked: false
 cardinality: 1
 translatable: true

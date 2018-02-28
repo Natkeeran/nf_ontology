@@ -75,11 +75,9 @@ content:
     region: content
   field_category:
     weight: 5
-    settings:
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: string_textfield
+    type: options_select
     region: content
   field_contact_person:
     weight: 10
@@ -116,11 +114,9 @@ content:
     region: content
   field_district:
     weight: 17
-    settings:
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: string_textfield
+    type: options_select
     region: content
   field_email:
     weight: 12
@@ -176,11 +172,9 @@ content:
     region: content
   field_province:
     weight: 18
-    settings:
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: string_textfield
+    type: options_select
     region: content
   field_registration_info:
     weight: 8
@@ -201,11 +195,9 @@ content:
     region: content
   field_subcategory:
     weight: 6
-    settings:
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: string_textfield
+    type: options_select
     region: content
   field_verification_date:
     weight: 25

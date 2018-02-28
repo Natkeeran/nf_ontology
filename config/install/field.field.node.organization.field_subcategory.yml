@@ -4,6 +4,8 @@ dependencies:
   config:
     - field.storage.node.field_subcategory
     - node.type.organization
+  module:
+    - options
   enforced:
     module:
       - nf_ontology
@@ -14,8 +16,8 @@ bundle: organization
 label: Subcategory
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: list_string

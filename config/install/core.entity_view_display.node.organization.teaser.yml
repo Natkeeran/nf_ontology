@@ -3,9 +3,35 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.organization.field_address_1
+    - field.field.node.organization.field_address_2
+    - field.field.node.organization.field_bank_info
+    - field.field.node.organization.field_category
+    - field.field.node.organization.field_contact_person
+    - field.field.node.organization.field_country
     - field.field.node.organization.field_description
+    - field.field.node.organization.field_dissolution_date
+    - field.field.node.organization.field_district
+    - field.field.node.organization.field_email
+    - field.field.node.organization.field_founding_date
+    - field.field.node.organization.field_geolocaiton
+    - field.field.node.organization.field_identifier
+    - field.field.node.organization.field_needs
+    - field.field.node.organization.field_notes
+    - field.field.node.organization.field_phone
+    - field.field.node.organization.field_province
+    - field.field.node.organization.field_registration_info
+    - field.field.node.organization.field_related_organization
+    - field.field.node.organization.field_subcategory
+    - field.field.node.organization.field_verification_date
+    - field.field.node.organization.field_verification_status
+    - field.field.node.organization.field_verified_by
+    - field.field.node.organization.field_village
+    - field.field.node.organization.field_volunteers_needed
+    - field.field.node.organization.field_website
     - node.type.organization
   module:
+    - options
     - user
   enforced:
     module:
@@ -15,9 +41,61 @@ targetEntityType: node
 bundle: organization
 mode: teaser
 content:
-  links:
-    weight: 100
+  field_category:
+    type: list_default
+    weight: 1
     region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_description:
+    type: basic_string
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_district:
+    type: list_default
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_phone:
+    type: string
+    weight: 3
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
-  field_description: true
+  field_address_1: true
+  field_address_2: true
+  field_bank_info: true
+  field_contact_person: true
+  field_country: true
+  field_dissolution_date: true
+  field_email: true
+  field_founding_date: true
+  field_geolocaiton: true
+  field_identifier: true
+  field_needs: true
+  field_notes: true
+  field_province: true
+  field_registration_info: true
+  field_related_organization: true
+  field_subcategory: true
+  field_verification_date: true
+  field_verification_status: true
+  field_verified_by: true
+  field_village: true
+  field_volunteers_needed: true
+  field_website: true
   langcode: true
